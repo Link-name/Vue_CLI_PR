@@ -1,7 +1,6 @@
 
 <template lang="">
-
-
+<body>
     <header>
         <headers/>
         <div class="container">
@@ -16,8 +15,10 @@
         <p class="info__contentDetails5__text">{{text2}}</p>
     </section>
     <slider class="swiper"/>   
-    
     <footers/>
+</body>
+
+
 </template>
 <script>
 import footers from './stand/footers.vue'

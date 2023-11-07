@@ -11,7 +11,7 @@
             </div>
             <nav class="header__top__right">
                 <router-link class="header__top__right__link" to="/">Home</router-link>
-                <router-link class="header__top__right__link" to="/project_Details5">Project</router-link>
+                <router-link class="header__top__right__link" to="/productList4">Project</router-link>
                 <router-link class="header__top__right__link" to="/blook">blook</router-link>
             </nav>
         </div>
