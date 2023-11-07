@@ -156,7 +156,7 @@ export default {
 
 .photo-container {
     margin: 0;
-    display: flex;
+    column-count: 2;
     flex-wrap: wrap;
     gap: 15px;
 }

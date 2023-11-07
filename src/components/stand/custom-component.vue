@@ -25,20 +25,22 @@
                     </defs>
                 </svg>
             </div>
-        </div>
-        <div class="custom-component__content">
-            <div class="custom-component__links">
-                <h2>{{ title }}</h2>
-                <a v-for="(link, index) in links" :key="index" :href="link.url">{{ link.text }}</a>
+
+            <div class="custom-component__content">
+                <div class="custom-component__links">
+                    <h2>{{ title }}</h2>
+                    <a v-for="(link, index) in links" :key="index" :href="link.url">{{ link.text }}</a>
+                </div>
+                <button class="custom-component__button" @click="handleButtonClick">
+                    <router-link class="header__top__right__link" to="/project_Details5"><svg width="52" height="53"
+                            viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26" cy="26.5" r="26" fill="#F4F0EC" />
+                            <path d="M23.771 33.1855L29.7139 26.4998L23.771 19.8141" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></router-link>
+
+                </button>
             </div>
-            <button class="custom-component__button" @click="handleButtonClick">
-                <router-link class="header__top__right__link" to="/project_Details5"><svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="26" cy="26.5" r="26" fill="#F4F0EC" />
-                    <path d="M23.771 33.1855L29.7139 26.4998L23.771 19.8141" stroke="#292F36" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg></router-link>
-                
-            </button>
         </div>
     </div>
 </template>
@@ -72,6 +74,14 @@ export default {
 
 a {
     text-decoration: none;
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
 }
 
 .custom-component {
