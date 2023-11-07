@@ -1,30 +1,37 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+<router-view/>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import homepage from './components/homepage.vue'
+import first_page from './components/first_page.vue'
+import Blook from './components/blook.vue'
+import productDetails from './components/productDetails.vue'
+import ProductList4 from './components/productList4.vue';
+import project_Details5 from './components/project_Details5.vue'
+import error404 from './components/Error404.vue'
 
-nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+
+
+export default {
+  name: 'App',
+  components: {
+
+    homepage,
+    first_page,
+    Blook,
+    productDetails,
+    ProductList4,
+    project_Details5,
+    error404
+    
   }
+
 }
-</style>
+</script>
+
+<style lang="scss"></style>
